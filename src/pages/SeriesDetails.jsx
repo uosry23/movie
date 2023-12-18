@@ -74,7 +74,7 @@ const SeriesDetails = () => {
     // console.log(detail);
     // console.log(castDircted);
     // console.log(recomandation_Series);
-  }, []);
+  }, [id]);
 
   if (load || loadCast || recomandation_Load || loadkey) {
     return <Loading />;
