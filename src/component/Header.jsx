@@ -50,7 +50,7 @@ const Header = () => {
                     <input
                       type="text"
                       className="bg-light rounded text-black mx-2 p-1"
-                      placeholder="inter movie name"
+                      placeholder="Enter movie name"
                       onChange={(e) =>
                         dispatch(getSearchMovies(e.target.value))
                       }
