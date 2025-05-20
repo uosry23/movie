@@ -1,31 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import './styles/theme.css';
+
 * {
   box-sizing: border-box !important;
   margin: 0;
   padding: 0;
 }
-/* .keywords {
-  background-color: brown;
-  margin: 5px;
-} */
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--primary-black);
+  color: var(--neutral-gray-100);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-blue);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-blue-dark);
+}
+
+/* Card styling */
+.card {
+  background-color: var(--neutral-gray-900);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button styling */
+.btn {
+  border-radius: var(--border-radius-pill);
+  padding: 0.5rem 1.25rem;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-normal);
+}
+
+/* Keywords styling */
 .keywords {
-  color: black; /* Set the default text color */
-  cursor: pointer; /* Set the cursor to a pointer on hover */
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add smooth transitions for both color and transform */
-  background-color: thistle;
-  border-radius: 7px;
-  margin: 2px;
+  color: var(--neutral-gray-900);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  background-color: var(--neutral-gray-300);
+  border-radius: var(--border-radius-pill);
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
 }
 
 .keywords:hover {
-  color: red; /* Change the text color on hover */
-  transform: scale(1, 1, 1, 1);
-  background-color: #3ca3e7;
-  width: 100%;
-  height: 100%;
+  color: var(--neutral-gray-100);
+  transform: scale(1.05);
+  background-color: var(--accent-blue);
 }
+
 .showmore:hover {
   cursor: pointer !important;
+  color: var(--accent-blue) !important;
 }
+
 #search_div {
-  z-index: 5000;
+  z-index: var(--z-index-dropdown);
 }

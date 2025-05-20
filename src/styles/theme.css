@@ -1,0 +1,85 @@
+:root {
+  /* Primary Colors */
+  --primary-dark: #0a0e17;
+  --primary-black: #000000;
+  --primary-light: #f8f9fa;
+  
+  /* Accent Colors */
+  --accent-blue: #3ca3e7;
+  --accent-blue-dark: #1a91da;
+  --accent-red: #e74c3c;
+  --accent-yellow: #f1c40f;
+  --accent-purple: #9b59b6;
+  --accent-green: #2ecc71;
+  
+  /* Neutral Colors */
+  --neutral-gray-100: #f8f9fa;
+  --neutral-gray-200: #e9ecef;
+  --neutral-gray-300: #dee2e6;
+  --neutral-gray-400: #ced4da;
+  --neutral-gray-500: #adb5bd;
+  --neutral-gray-600: #6c757d;
+  --neutral-gray-700: #495057;
+  --neutral-gray-800: #343a40;
+  --neutral-gray-900: #212529;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-dark) 0%, #1a2a3a 100%);
+  --gradient-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.2);
+  
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 20px;
+  --border-radius-pill: 50px;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  
+  /* Typography */
+  --font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-heading: 'Montserrat', var(--font-family-base);
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+}

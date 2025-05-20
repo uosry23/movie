@@ -1,3 +1,26 @@
+@import './styles/theme.css';
+
 body {
-  background: black !important;
+  background: var(--primary-black) !important;
+  font-family: var(--font-family-base);
+  color: var(--neutral-gray-100);
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-gray-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-gray-700);
+  border-radius: var(--border-radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
 }
